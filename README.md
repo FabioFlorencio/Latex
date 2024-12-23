@@ -12,12 +12,14 @@ Aqui está uma tabela de revisão sobre as principais sintaxes do Latex.
     - [Texto](#texto)
     - [Exemplo parágrafo](#exemplo-parágrafo)
     - [Página](#página)
-  - [📋 Tabelas](#-tabelas)
-    - [Exemplo de tabela](#exemplo-de-tabela)
-      - [Atividade avaliativa](#atividade-avaliativa)
+  - [🎨 Imagem](#-imagem)
+    - [Exemplo de imagem](#exemplo-de-imagem)
+  - [📝 Cabeçalho](#-cabeçalho)
+    - [Exemplo de cabeçalho](#exemplo-de-cabeçalho)
+      - [Exemplo](#exemplo)
   - [📦 Pacotes comuns](#-pacotes-comuns)
-    - [Exemplo de tabela](#exemplo-de-tabela-1)
-  - [📦 Capas](#-capas)
+    - [Exemplo de tabela](#exemplo-de-tabela)
+  - [📕 Capas](#-capas)
     - [Exemplo de Capas](#exemplo-de-capas)
     
     
@@ -57,7 +59,7 @@ Aqui está uma tabela de revisão sobre as principais sintaxes do Latex.
 | `Quebrar Linha sem parágrafo`                        | `\\`                                                        |
 | `Determina a tabulação vertical`                     | `\vspace{1cm}`                                              |
 | `Determina a tabulação horizontal`                   | `\hspace{2cm}`                                              |
-| `Quebrar linha com paragrafo`                        | `\par`                                                      |
+| `Quebrar linha com parágrafo`                        | `\par`                                                      |
 | `linha horizontal`                                   | `\hrulefill\par`                                            |
 
 
@@ -126,6 +128,22 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel mattis sapien.
 ```
 
 
+## 🎨 Imagem
+
+### Exemplo de imagem
+
+
+````Latex
+
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=1\linewidth]{inserir-img.png}
+    \caption{Caption}
+    \label{fig:enter-label}
+\end{figure} 
+
+```
+
 ## 📋 Tabelas
 
 ### Exemplo de tabela
@@ -138,7 +156,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel mattis sapien.
 % juntas as linhas
 \usepackage{multirow}
 
-% 
 \begin{table}[h!]    
 \hrulefill\par
     \Large
@@ -157,12 +174,51 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel mattis sapien.
 \end{table}
 
 ```
+## 📝 Cabeçalho
+
+### Exemplo de cabeçalho
+
+#### Exemplo
+
+
+```Latex
+
+\documentclass[a4paper ,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{fancyhdr}
+\usepackage{graphicx,color} % Required for inserting images
+\usepackage[headsep=0.9cm, top= 3cm, bottom= 3cm, right= 2cm, left= 3cm]{geometry}
+
+\pagestyle{fancy}
+\fancyhf{Técnicas de Programação II}
+\lhead{\includegraphics[scale=0.2]{fatec_ra_metropolitana_sp_capital_zona_leste_cor.png}}
+\rhead{Padrões de projeto}
+\rfoot{Página\thepage}
+\lfoot{Dia \today}
+
+\begin{document}
+\section{Introdução}
+    \subsection{Apresentação}
+    \subsection{Quem sou?}
+    \subsection{O que faço}
+\section{Desenvolvimento}    
+    \subsection{Coleta de dados}
+        \subsubsection{Métodos}
+\section{Conclusão}    
+
+\newpage
+\section{Teste}
+
+\end{document}
+
+```
 
 ## 📦 Pacotes comuns
 
 ### Exemplo de tabela
 
-## 📦 Capas
+## 📕 Capas
 
 ### Exemplo de Capas
 
