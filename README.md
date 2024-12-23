@@ -10,8 +10,14 @@ Aqui está uma tabela de revisão sobre as principais sintaxes do Latex.
     - [Comentário, compilar, caractere de escape](#comentário-compilar-caractere-de-escape)
   - [✍️ Formatação](#️-formatação)
     - [Texto](#texto)
+    - [Exemplo parágrafo](#exemplo-parágrafo)
+    - [Página](#página)
   - [📋 Tabelas](#-tabelas)
     - [Exemplo de tabela](#exemplo-de-tabela)
+  - [📦 Pacotes comuns](#-pacotes-comuns)
+    - [Exemplo de tabela](#exemplo-de-tabela-1)
+  - [📦 Capas](#-capas)
+    - [Exemplo de Capas](#exemplo-de-capas)
     
     
 
@@ -54,7 +60,109 @@ Aqui está uma tabela de revisão sobre as principais sintaxes do Latex.
 | `linha horizontal`                                   | `\hrulefill\par`                                            |
 
 
+### Exemplo parágrafo
+
+```Latex
+
+% Usando pacote setspace
+
+% \onehalfspacing -> espaço entre linhas
+% \doublespacing -> espaço entre linhas
+% \singlespacing -> espaço entre parágrafos
+
+
+\usepackage{setspace}
+
+\begin{document}
+
+\section*{Estudo de parágrafos}
+\singlespacing
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel mattis sapien. Curabitur sem magna, lacinia eu magna venenatis, ornare ultricies augue. Quisque lobortis ante ut risus faucibus ultrices. Suspendisse quis dui nisi. Pellentesque sollicitudin diam vitae turpis lacinia, id vulputate metus cursus. Donec sagittis fermentum enim, id cursus massa porttitor vel. Etiam vitae odio sit amet magna varius tincidunt a eget dolor.
+
+\singlespacing
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel mattis sapien. Curabitur sem magna, lacinia eu magna venenatis, ornare ultricies augue. Quisque lobortis ante ut risus faucibus ultrices. Suspendisse quis dui nisi. Pellentesque sollicitudin diam vitae turpis lacinia, id vulputate metus cursus. Donec sagittis fermentum enim, id cursus massa porttitor vel. Etiam vitae odio sit amet magna varius tincidunt a eget dolor.
+\section*{Título sem númeração}
+
+\end{document}
+
+```
+
+### Página
+
+| **Descrição**                                        | **Sintaxe**                                                 |
+|:-----------------------------------------------------|:------------------------------------------------------------|
+| `Determina cor da página`                            | `\pagecolor{argumento}`                                     |
+
+``` Latex
+
+% Exemplo para alterar cor da pagina
+
+\definecolor{CorA}{rgb}{0.6,1,0.3}
+
+
+\begin{document}
+
+\colorbox{red}{Lorem ipsum}\textbf{ dolor sit amet, consectetur adipiscing elit. Cras vel mattis sapien. Curabitur sem magna, lacinia eu magna venenatis, ornare ultricies augue. Quisque lobortis ante ut risus faucibus ultrices. Suspendisse quis dui nisi. Pellentesque sollicitudin diam vitae turpis lacinia, id vulputate metus cursus. Donec sagittis fermentum enim, id cursus massa porttitor vel. Etiam vitae odio sit amet magna varius tincidunt a eget dolor.}
+
+\pagecolor{CorA}
+
+\end{document}
+```
+
 
 ## 📋 Tabelas
 
 ### Exemplo de tabela
+
+## 📦 Pacotes comuns
+
+### Exemplo de tabela
+
+## 📦 Capas
+
+### Exemplo de Capas
+
+
+```Latex
+
+\begin{titlepage}
+    
+    \begin{center}
+        {\LARGE \textbf{Fatec Zona Leste}}
+        
+        \vspace{5cm}
+    
+        Relatório Final\\
+        Trabalho de conclusão de curso\\
+    
+        \vspace{5cm}
+        {\Large \textbf{Como criar um trabalho no Latex}}
+        
+        \vspace{6cm}
+        \hspace{5cm}Autor: \textbf{Fábio}\\
+        
+        \hspace{5cm}Orientador: \textbf{Prof. X}\\
+        \vspace{2cm}
+    
+        São Paulo, Dezembro de 2024
+    \end{center}
+\end{titlepage}
+
+\newpage
+
+\renewcommand{\contentsname}{Índice}
+\tableofcontents 
+
+\newpage
+
+\section{Introdução}
+\section{Desenvolvimento}
+\section{Conclusão}
+
+%add conteúdo em tableofcontents
+\addcontentsline{toc}{section}{Anexo}
+
+\section*{Anexo}
+
+```
