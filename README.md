@@ -14,11 +14,14 @@ Aqui está uma tabela de revisão sobre as principais sintaxes do Latex.
     - [Página](#página)
   - [🎨 Imagem](#-imagem)
     - [Exemplo de imagem](#exemplo-de-imagem)
+  - [📋 Tabelas](#-tabelas)
+    - [Exemplo de tabela](#exemplo-de-tabela)
+      - [Atividade avaliativa](#atividade-avaliativa)
   - [📝 Cabeçalho](#-cabeçalho)
     - [Exemplo de cabeçalho](#exemplo-de-cabeçalho)
       - [Exemplo](#exemplo)
   - [📦 Pacotes comuns](#-pacotes-comuns)
-    - [Exemplo de tabela](#exemplo-de-tabela)
+    - [Exemplo de tabela](#exemplo-de-tabela-1)
   - [📕 Capas](#-capas)
     - [Exemplo de Capas](#exemplo-de-capas)
     
@@ -111,7 +114,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel mattis sapien.
 |:-----------------------------------------------------|:------------------------------------------------------------|
 | `Determina cor da página`                            | `\pagecolor{argumento}`                                     |
 
-``` Latex
+
+```Latex
 
 % Exemplo para alterar cor da pagina
 
@@ -133,7 +137,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel mattis sapien.
 ### Exemplo de imagem
 
 
-````Latex
+```Latex
 
 \begin{figure}[!htb]
     \centering
