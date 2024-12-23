@@ -1,11 +1,11 @@
-# 📋 Latex ⚡
+# 📚 Latex ⚡
 
 ![imagem gif de um gato folheando um livro](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExeGUwY281MXptb3h5Y2lnaXVlZmxjdHByYjBlcjZ1Mmlhd3NleXp3cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/W8OfQ8S1PXWKY/giphy.gif)
 
 Aqui está uma tabela de revisão sobre as principais sintaxes do Latex.
 
 
-- [📋 Latex ⚡](#-latex-)
+- [📚 Latex ⚡](#-latex-)
   - [🌐 Comandos simples](#-comandos-simples)
     - [Comentário, compilar, caractere de escape](#comentário-compilar-caractere-de-escape)
   - [✍️ Formatação](#️-formatação)
@@ -14,6 +14,7 @@ Aqui está uma tabela de revisão sobre as principais sintaxes do Latex.
     - [Página](#página)
   - [📋 Tabelas](#-tabelas)
     - [Exemplo de tabela](#exemplo-de-tabela)
+      - [Atividade avaliativa](#atividade-avaliativa)
   - [📦 Pacotes comuns](#-pacotes-comuns)
     - [Exemplo de tabela](#exemplo-de-tabela-1)
   - [📦 Capas](#-capas)
@@ -75,14 +76,28 @@ Aqui está uma tabela de revisão sobre as principais sintaxes do Latex.
 
 \begin{document}
 
-\section*{Estudo de parágrafos}
-\singlespacing
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel mattis sapien. Curabitur sem magna, lacinia eu magna venenatis, ornare ultricies augue. Quisque lobortis ante ut risus faucibus ultrices. Suspendisse quis dui nisi. Pellentesque sollicitudin diam vitae turpis lacinia, id vulputate metus cursus. Donec sagittis fermentum enim, id cursus massa porttitor vel. Etiam vitae odio sit amet magna varius tincidunt a eget dolor.
+\section{Estudo de parágrafos}
 
+\section{Estudo de parágrafos}
+\singlespacing
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel mattis sapien. Curabitur sem magna, lacinia eu magna venenatis, ornare ultricies augue. Quisque lobortis ante ut risus faucibus ultrices. Suspendisse quis dui 
 \singlespacing
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel mattis sapien. Curabitur sem magna, lacinia eu magna venenatis, ornare ultricies augue. Quisque lobortis ante ut risus faucibus ultrices. Suspendisse quis dui nisi. Pellentesque sollicitudin diam vitae turpis lacinia, id vulputate metus cursus. Donec sagittis fermentum enim, id cursus massa porttitor vel. Etiam vitae odio sit amet magna varius tincidunt a eget dolor.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel mattis sapien. Curabitur sem magna, lacinia eu magna venenatis, ornare ultricies augue. Quisque lobortis ante ut risus faucibus ultrices. Suspendisse quis dui 
 \section*{Título sem númeração}
+
+% Defini o espaço entre linhas de um parágrafo especifico
+% \singlespace
+% \doublespace
+% \onehalfspace 
+\begin{doublespace}    
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel mattis sapien. Curabitur sem magna, lacinia eu magna venenatis, ornare ultricies augue. Quisque lobortis ante ut risus faucibus ultrices. Suspendisse quis dui 
+\end{doublespace}
+\section*{Título sem númeração}
+
+\begin{spacing}{1.2}    
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel mattis sapien. Curabitur sem magna, lacinia eu magna venenatis, ornare ultricies augue. Quisque lobortis ante ut risus faucibus ultrices. Suspendisse quis dui nisi. Pellentesque sollicitudin diam vitae turpis lacinia, id vulputate metus cursus. Donec sagittis fermentum enim, id cursus massa porttitor vel. Etiam vitae odio sit amet magna varius tincidunt a eget dolor.
+\end{spacing}
 
 \end{document}
 
@@ -114,6 +129,34 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel mattis sapien.
 ## 📋 Tabelas
 
 ### Exemplo de tabela
+
+#### Atividade avaliativa
+
+
+```Latex
+
+% juntas as linhas
+\usepackage{multirow}
+
+% 
+\begin{table}[h!]    
+\hrulefill\par
+    \Large
+    \begin{tabular}{r  c  l}
+        \multirow{5}*{\includegraphics[scale= 0.5]{arquivo.png}}
+        \hspace{3cm} & \textbf{Atividade Avaliativa}\\
+        \hspace{3cm} & Curso: Desenv. de software multiplataforma\\
+        \hspace{3cm} & Disciplina: Mobile I\\
+        \hspace{3cm} & Professor: X\\
+        \hspace{3cm} & Data: 24/12/2024\\
+    \end{tabular}\par  
+\hrulefill\\
+\vspace{0.3cm}Aluno: \hspace{10cm} Nota:
+\hline
+
+\end{table}
+
+```
 
 ## 📦 Pacotes comuns
 
