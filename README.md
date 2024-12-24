@@ -24,6 +24,7 @@ Aqui está uma tabela de revisão sobre as principais sintaxes do Latex.
     - [Exemplo de tabela](#exemplo-de-tabela-1)
   - [📕 Capas](#-capas)
     - [Exemplo de Capas](#exemplo-de-capas)
+  - [🌐 Sites úteis](#-sites-úteis)
     
     
 
@@ -269,3 +270,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel mattis sapien.
 \section*{Anexo}
 
 ```
+
+
+## 🌐 Sites úteis
+
+
+| **Descrição**                                      | **Links**                                                             |
+|:---------------------------------------------------|:----------------------------------------------------------------------|
+| `Ferramenta para encontrar símbolos específicos`   | [Site](https://detexify.kirelabs.org/classify.html)                   |
