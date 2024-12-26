@@ -8,6 +8,8 @@ Aqui está uma tabela de revisão sobre as principais sintaxes do Latex.
 - [📚 Latex ⚡](#-latex-)
   - [🌐 Comandos simples](#-comandos-simples)
     - [Comentário, compilar, caractere de escape](#comentário-compilar-caractere-de-escape)
+  - [📦 Pacotes comuns](#-pacotes-comuns)
+    - [Exemplo](#exemplo)
   - [✍️ Formatação](#️-formatação)
     - [Texto](#texto)
     - [Exemplo parágrafo](#exemplo-parágrafo)
@@ -16,12 +18,11 @@ Aqui está uma tabela de revisão sobre as principais sintaxes do Latex.
     - [Exemplo de imagem](#exemplo-de-imagem)
   - [📋 Tabelas](#-tabelas)
     - [Exemplo de tabela](#exemplo-de-tabela)
+      - [Tabela simples](#tabela-simples)
       - [Atividade avaliativa](#atividade-avaliativa)
   - [📝 Cabeçalho](#-cabeçalho)
     - [Exemplo de cabeçalho](#exemplo-de-cabeçalho)
-      - [Exemplo](#exemplo)
-  - [📦 Pacotes comuns](#-pacotes-comuns)
-    - [Exemplo de tabela](#exemplo-de-tabela-1)
+      - [Exemplo](#exemplo-1)
   - [👨‍💻 Formatação de Código de programação](#-formatação-de-código-de-programação)
     - [Exemplo de código 1](#exemplo-de-código-1)
     - [Exemplo de código 2](#exemplo-de-código-2)
@@ -52,6 +53,10 @@ Aqui está uma tabela de revisão sobre as principais sintaxes do Latex.
     Sou um comentário.
 \end{comment}
 ```
+
+## 📦 Pacotes comuns
+
+### Exemplo
 
 ## ✍️ Formatação
 
@@ -156,6 +161,24 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel mattis sapien.
 
 ### Exemplo de tabela
 
+#### Tabela simples
+
+
+```Latex
+
+\begin{table}[!h]
+   \centering
+    \begin{tabular}{|c|c|}\hline    
+         Operador & Significado\\ \hline
+         + & adição\\ \hline
+         - & subtração\\ \hline
+         * & multiplicação\\ \hline
+         / & divisão\\ \hline
+         \% & resto da divisão ("mod")\\ \hline                
+    \end{tabular}       
+    \caption{Operadores aritméticos}    
+\end{table}
+```
 #### Atividade avaliativa
 
 
@@ -221,10 +244,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel mattis sapien.
 \end{document}
 
 ```
-
-## 📦 Pacotes comuns
-
-### Exemplo de tabela
 
 
 ## 👨‍💻 Formatação de Código de programação 
