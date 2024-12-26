@@ -18,7 +18,8 @@ Aqui está uma tabela de revisão sobre as principais sintaxes do Latex.
     - [Exemplo de imagem](#exemplo-de-imagem)
   - [📋 Tabelas](#-tabelas)
     - [Exemplo de tabela](#exemplo-de-tabela)
-      - [Tabela simples](#tabela-simples)
+      - [Tabela simples grade](#tabela-simples-grade)
+      - [Tabela simples sem grade](#tabela-simples-sem-grade)
       - [Atividade avaliativa](#atividade-avaliativa)
   - [📝 Cabeçalho](#-cabeçalho)
     - [Exemplo de cabeçalho](#exemplo-de-cabeçalho)
@@ -161,7 +162,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel mattis sapien.
 
 ### Exemplo de tabela
 
-#### Tabela simples
+#### Tabela simples grade
 
 
 ```Latex
@@ -177,6 +178,24 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel mattis sapien.
          \% & resto da divisão ("mod")\\ \hline                
     \end{tabular}       
     \caption{Operadores aritméticos}    
+\end{table}
+```
+#### Tabela simples sem grade
+
+
+```Latex
+
+\begin{table}[!h]
+    \large
+    \begin{flushleft}    
+      \begin{tabular}{l l}      
+        \hspace{1cm} 2 * 6 / 3 & \hspace{3cm} Resultado = 4\\
+        \hspace{1cm} 3 + 2 * 4 & \hspace{3cm} Resultado = 11\\
+        \hspace{1cm} (3 + 2) * 4 & \hspace{3cm} Resultado = 20\\
+        \hspace{1cm} 60 / (3 + 2) * 4 & \hspace{3cm} Resultado = 48\\
+        \hspace{1cm} 60 / ((3 + 2) * 4) & \hspace{3cm} Resultado = 3\\
+      \end{tabular}
+    \end{flushleft}
 \end{table}
 ```
 #### Atividade avaliativa
