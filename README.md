@@ -18,8 +18,9 @@ Aqui está uma tabela de revisão sobre as principais sintaxes do Latex.
     - [Exemplo de imagem](#exemplo-de-imagem)
   - [📋 Tabelas](#-tabelas)
     - [Exemplo de tabela](#exemplo-de-tabela)
-      - [Tabela simples grade](#tabela-simples-grade)
+      - [Tabela simples com grade](#tabela-simples-com-grade)
       - [Tabela simples sem grade](#tabela-simples-sem-grade)
+      - [Tabela elaborada](#tabela-elaborada)
       - [Atividade avaliativa](#atividade-avaliativa)
   - [📝 Cabeçalho](#-cabeçalho)
     - [Exemplo de cabeçalho](#exemplo-de-cabeçalho)
@@ -162,7 +163,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel mattis sapien.
 
 ### Exemplo de tabela
 
-#### Tabela simples grade
+#### Tabela simples com grade
 
 
 ```Latex
@@ -196,6 +197,31 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel mattis sapien.
         \hspace{1cm} 60 / ((3 + 2) * 4) & \hspace{3cm} Resultado = 3\\
       \end{tabular}
     \end{flushleft}
+\end{table}
+```
+#### Tabela elaborada
+
+
+```Latex
+
+\usepackage{adjustbox} % ajusta tabela
+\usepackage{multirow} % junta celulas
+
+\section*{Tipos primitivos em Java}
+
+\begin{table}[!ht]
+\resizebox{0.99\linewidth}{!}{
+    \begin{tabular}{|c|c|c|c|c|}\hline
+    \textbf{Descrição} & \textbf{Tipo} & \textbf{Tamanho} & \textbf{Valores} & \textbf{Valor Padrão}\\ \hline
+    \multirow{4}{*}{Tipos numéricos inteiros} & \textbf{byte} & 8 bits & -128 a 127 & 0\\ \cline{2-5} 
+     & \textbf{short} & 16 bits & -2147483648 a 2147483647 & 0\\ \cline{2-5} 
+     & \textbf{int} & 32 bits & -2147483648 a 2147483647 & 0\\ \cline{2-5} 
+     & \textbf{long} & 64 bits & \begin{tabular}[c]{@{}c@{}}-9223372036854770000 a\\ 9223372036854770000\end{tabular} & 0L\\ \hline
+    \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}Tipos numéricos com\\ ponto flutuante\end{tabular}} & \textbf{float} & 32 bits & -1,4024E-37 a 3,402E+38 & 00.f\\ \cline{2-5} 
+     & \textbf{double} & 64 bits & -4,94E-307 a 1,79E+308 & 0.0\\ \hline
+    um caractere Unicode & \textbf{char} & 16 bits & '\textbackslash{}u0000' a '\textbackslash{}uFFFF' & '\textbackslash{}u0000'\\ \hline
+    valor verdade & \textbf{boolean} & 1 bit & \{false,true\} & false\\ \hline
+    \end{tabular}}
 \end{table}
 ```
 #### Atividade avaliativa
@@ -427,3 +453,4 @@ print(msg.format(*result))
 | **Descrição**                                      | **Links**                                                             |
 |:---------------------------------------------------|:----------------------------------------------------------------------|
 | `Ferramenta para encontrar símbolos específicos`   | [detexify](https://detexify.kirelabs.org/classify.html)               |
+| `Ferramenta para gerar tabela`                     | [tables generator](https://www.tablesgenerator.com/)                  |
