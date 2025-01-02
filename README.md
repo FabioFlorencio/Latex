@@ -387,7 +387,7 @@ def reajustar_salario(sal_ant):
 
     return sal_ant, sal_atual, perc_aumento, valor_aumento
 
-# A função retorna uma tupla com os valores da função
+# A função retorna uma tupla com os valores
 result = reajustar_salario(2800)
 msg = 'Salário antigo: R${:.2f} | Salário atual: R${:.2f} | percentual: {}% | valor do aumento:R${:.2f}'
 
