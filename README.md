@@ -21,6 +21,7 @@ Aqui está uma tabela de revisão sobre as principais sintaxes do Latex.
       - [Tabela simples com grade](#tabela-simples-com-grade)
       - [Tabela simples sem grade](#tabela-simples-sem-grade)
       - [Tabela elaborada](#tabela-elaborada)
+      - [Tabela usando resizebox](#tabela-usando-resizebox)
       - [Atividade avaliativa](#atividade-avaliativa)
   - [📝 Cabeçalho](#-cabeçalho)
     - [Exemplo de cabeçalho](#exemplo-de-cabeçalho)
@@ -211,7 +212,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel mattis sapien.
 
 \begin{table}[!ht]
 \resizebox{0.99\linewidth}{!}{
-    \begin{tabular}{|c|c|c|c|c|}\hline
+  \begin{tabular}{|c|c|c|c|c|}\hline
     \textbf{Descrição} & \textbf{Tipo} & \textbf{Tamanho} & \textbf{Valores} & \textbf{Valor Padrão}\\ \hline
     \multirow{4}{*}{Tipos numéricos inteiros} & \textbf{byte} & 8 bits & -128 a 127 & 0\\ \cline{2-5} 
      & \textbf{short} & 16 bits & -2147483648 a 2147483647 & 0\\ \cline{2-5} 
@@ -224,6 +225,34 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel mattis sapien.
     \end{tabular}}
 \end{table}
 ```
+
+#### Tabela usando resizebox
+  
+  
+```Latex
+\usepackage{adjustbox} % ajusta tabela
+\newcommand{\colorir}{\cellcolor{blue}}
+
+\begin{table}[!h]
+    \centering
+    \resizebox{0.98\linewidth}{!}{
+    \begin{tabular}{c|c|c|c|c|c|c} \hline
+         Atividade &  1$^\circ$ Semestre & 2$^\circ$ Semestre &  3$^\circ$ Semestre &  4$^\circ$ Semestre &  5$^\circ$ Semestre & 6$^\circ$ Semestre \\ \hline
+         A &\colorir  &\colorir  &\colorir  &\colorir  &\colorir  &\colorir  \\ \hline
+         B &\colorir  &\colorir  &\colorir  &          &          & \\ \hline
+         C &          &          &\colorir  &\colorir  &\colorir  &\colorir  \\ \hline
+         D &          &          &\colorir  &\colorir  &\colorir  &\colorir  \\ \hline
+         E &          &          &          &\colorir  &\colorir  &\colorir  \\ \hline
+         F &          &          &          &          &\colorir  &\colorir  \\ \hline
+         G &          &          &          &\colorir  &\colorir  &\colorir  \\ \hline
+         H &          &          &          &          &          &\colorir  \\ \hline
+          
+    \end{tabular}}
+    \caption{Cronograma de atividades}
+    \label{tab:cronograma}
+\end{table}
+```
+
 #### Atividade avaliativa
 
 
