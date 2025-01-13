@@ -20,6 +20,8 @@ Aqui está uma tabela de revisão sobre as principais sintaxes do Latex.
     - [Exemplo de tabela](#exemplo-de-tabela)
       - [Tabela simples com grade](#tabela-simples-com-grade)
       - [Tabela simples sem grade](#tabela-simples-sem-grade)
+      - [Tabela com tamanho de célula fixa](#tabela-com-tamanho-de-célula-fixa)
+      - [Tabela com cor na célula](#tabela-com-cor-na-célula)
       - [Tabela elaborada](#tabela-elaborada)
       - [Tabela usando resizebox](#tabela-usando-resizebox)
       - [Atividade avaliativa](#atividade-avaliativa)
@@ -199,6 +201,39 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel mattis sapien.
         \hspace{1cm} 60 / ((3 + 2) * 4) & \hspace{3cm} Resultado = 3\\
       \end{tabular}
     \end{flushleft}
+\end{table}
+```
+#### Tabela com tamanho de célula fixa
+
+
+```Latex
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|p{4cm}|c|}\hline    
+         Tamanho fixo contéudo &  Tamanho variável \\ \hline
+         Tamanho fixo &  Tamanho variável \\ \hline         
+    \end{tabular}    
+\end{table}
+```
+
+#### Tabela com cor na célula
+
+
+```Latex
+
+\usepackage[table]{xcolor}
+
+\arrayrulecolor{orange}
+\setlength{\arrayrulewidth}{0.5mm}
+\renewcommand\arraystretch{1.5}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|p{4cm}|c|}\hline    
+         \rowcolor{yellow}Tamanho fixo contéudo & Tamanho variável \\ \hline
+         Tamanho fixo &  \cellcolor{green}Tamanho variável com cor na célula\\ \hline         
+    \end{tabular}    
 \end{table}
 ```
 #### Tabela elaborada
