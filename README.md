@@ -29,6 +29,7 @@ Aqui está uma tabela de revisão sobre as principais sintaxes do Latex.
   - [👨‍💻 Formatação de Código de programação](#-formatação-de-código-de-programação)
     - [Exemplo de código 1](#exemplo-de-código-1)
     - [Exemplo de código 2](#exemplo-de-código-2)
+    - [Exemplo de código 3](#exemplo-de-código-3)
   - [📕 Capas](#-capas)
     - [Exemplo de Capas](#exemplo-de-capas)
   - [🌐 Sites úteis](#-sites-úteis)
@@ -231,6 +232,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel mattis sapien.
   
 ```Latex
 \usepackage{adjustbox} % ajusta tabela
+\usepackage{colortbl}
 \newcommand{\colorir}{\cellcolor{blue}}
 
 \begin{table}[!h]
@@ -358,7 +360,7 @@ soma(2,4,6,7,8,3)
 \definecolor{backcolour}{rgb}{.95, .95, 1}
 
 \lstdefinestyle{mystyle}{
-    backgroundcolor=\color{backcolour},
+  backgroundcolor=\color{backcolour},
     commentstyle=\color{codegreen},
     keywordstyle=\color{blue},
     stringstyle=\color{codepurple},
@@ -426,6 +428,26 @@ print(msg.format(*result))
 \end{lstlisting}
 
 \end{document}
+```
+
+### Exemplo de código 3
+
+  
+```Latex
+\usepackage{tcolorbox}
+\usepackage{listings}
+
+\begin{document}
+
+\begin{tcolorbox}[colback=green!5!white, colframe=green!75!black, title=Código Exemplo]
+\begin{lstlisting}[language=Python]
+def hello():
+    print("Hello, world!")
+\end{lstlisting}
+\end{tcolorbox}
+
+\end{document}
+
 ```
 
 ## 📕 Capas
