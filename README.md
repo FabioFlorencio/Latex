@@ -1,6 +1,6 @@
 # 📚 Latex ⚡
 
-![imagem gif de um gato folheando um livro](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExeGUwY281MXptb3h5Y2lnaXVlZmxjdHByYjBlcjZ1Mmlhd3NleXp3cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/W8OfQ8S1PXWKY/giphy.gif)
+![imagem gif de um gato folheando um livro](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXh3bnR5OWJqZjVzdjNsMDY4dnN0bDdnNnRlMzF0eHExbzQwejZvNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xY4GnaH8P3fc4/giphy.gif)
 
 Aqui está uma tabela de revisão sobre as principais sintaxes do Latex.
 
