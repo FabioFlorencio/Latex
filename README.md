@@ -32,6 +32,8 @@ Aqui está uma tabela de revisão sobre as principais sintaxes do Latex.
     - [Exemplo de código 1](#exemplo-de-código-1)
     - [Exemplo de código 2](#exemplo-de-código-2)
     - [Exemplo de código 3](#exemplo-de-código-3)
+  - [👨‍💻 Formatação de sintaxe de código](#-formatação-de-sintaxe-de-código)
+    - [Exemplo de código](#exemplo-de-código)
   - [📕 Capas](#-capas)
     - [Exemplo de Capas](#exemplo-de-capas)
   - [🌐 Sites úteis](#-sites-úteis)
@@ -295,7 +297,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel mattis sapien.
 
 ```Latex
 
-% juntas as linhas
+% junta as linhas
 \usepackage{multirow}
 
 \begin{table}[h!]    
@@ -482,6 +484,19 @@ def hello():
 \end{tcolorbox}
 
 \end{document}
+
+```
+
+## 👨‍💻 Formatação de sintaxe de código
+
+### Exemplo de código
+
+```Latex
+\large{\textbf{Sintaxe}}\vspace{0.5cm}
+
+{\color{red}{while (condição) \{ \\ \vspace{0.1cm}
+\hspace{1cm} comando 1 \\ \vspace{0.1cm}
+\hspace{1cm} comando 2  \\ \vspace{0.1cm} \hspace{0.4cm}\}}}
 
 ```
 
